@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+        <style>
+            body{
+                margin: 0;
+            }
+            input {
+                font-size: 0.9rem;
+                padding: 1.2%;
+                width: 70%;
+                margin-left: 8%;
+                margin-top: 1.2%;
+            }
+
+            .btnSub {
+                border: none;
+                padding: 2.3%;
+                width: 30%;
+                background-color: blue;
+                color: white;
+                border-radius: 3px
+            }
+
+            .label {
+                margin: 0;
+                font-size: 0.8rem;
+                margin-left: 8%;
+                font-family: verdana;
+                margin-top: 3%;
+            }
+
+            .lgHed {
+                font-size: 2rem;
+                margin: 0;
+                text-align: center;
+                margin-bottom: 5%
+            }
+
+            hr {
+                border-color: lightgrey
+            }
+
+            .form {
+                /*border: 1px solid;*/
+                width: 35%;
+                margin-left: 35%;
+                margin-top: 8%;
+            }
+
+            .div {
+                /* border: 1px solid;*/
+                height: 68vh;
+                /*  overflow-y: scroll;*/
+            }
+            .navBarCon{
+                border: 1px solid;
+                height: 10vh;
+                background-color: black;
+
+            }
+            .iconCon{
+                /* border: 1px solid white;*/
+                height: 100%;
+                width:20%;
+                margin-left: 5%;
+                float: left;
+
+            }
+            img{
+                height: 7vh;
+                margin-top: 10%;
+            }
+            .imgCon{
+                /*border: 1px solid white;*/
+                height: 100%;
+                width: 25%;
+                float: left;
+            }
+            .restCon{
+                float: left;
+                /*border: 1px solid white;*/
+                width: 73%;
+                height: 100%;
+
+            }
+            .navHed{
+                color: white;
+                font-size: 1.1rem;
+                margin: 0;
+                text-align: center;
+                font-family: verdana;
+                margin-top: 10%;
+            }
+            .butCon{
+                /* border: 1px solid white;*/
+                float: left;
+                height: 80%;
+                width: 60%;
+                margin-left: 10%
+            }
+            .loBtn{
+                border: none;
+                background-color: crimson;
+                color: white;
+                padding: 1%;
+                width: 15%;
+                margin-top: 2%;
+                font-family: century gothic;
+                margin-left: 16%;
+
+            }
+            .naBtn {
+                color: white;
+                text-decoration: none;
+                display: block;
+                float: left;
+                margin-left: 5%;
+                margin-top: 3.5%;
+                font-family: century gothic;
+                font-size: 0.8rem
+            }
+            .navBarCon {
+            border: 1px solid;
+            height: 10vh;
+            background-color: black;
+
+        }
+
+        .iconCon {
+            /* border: 1px solid white;*/
+            height: 100%;
+            width: 20%;
+            margin-left: 5%;
+            float: left;
+
+        }
+
+        img {
+            height: 7vh;
+            margin-top: 10%;
+        }
+
+        .imgCon {
+            /*border: 1px solid white;*/
+            height: 100%;
+            width: 25%;
+            float: left;
+        }
+
+        .restCon {
+            float: left;
+            /*border: 1px solid white;*/
+            width: 73%;
+            height: 100%;
+
+        }
+
+        .navHed {
+            color: white;
+            font-size: 1.1rem;
+            margin: 0;
+            text-align: center;
+            font-family: verdana;
+            margin-top: 10%;
+        }
+
+        .butCon {
+            /* border: 1px solid white;*/
+            float: left;
+            height: 80%;
+            width: 60%;
+            margin-left: 10%
+        }
+
+        .loBtn {
+            border: none;
+            background-color: crimson;
+            color: white;
+            padding: 1%;
+            width: 15%;
+            margin-top: 2%;
+            font-family: century gothic;
+            margin-left: 8%;
+
+        }
+
+        .naBtn {
+            color: white;
+            text-decoration: none;
+            /*   display: block;
+        float: left;*/
+            margin-left: 4%;
+            margin-top: 3.5%;
+            font-family: century gothic;
+            font-size: 0.8rem
+        }
+
+        .ul {
+            /* border: 1px solid white;*/
+            color: white;
+            font-family: century gothic;
+            font-size: 0.8rem;
+            text-decoration: none;
+            list-style: none;
+            margin-top: 3%;
+        }
+
+        .mainLi {
+            float: left;
+            /*border: 1px solid white;*/
+            width: 13%;
+
+        }
+
+        ul li ul {
+            list-style: none;
+            margin-left: -30%;
+            margin-top: 5%;
+        }
+
+        ul li:hover ul li {
+            visibility: visible;
+        }
+
+        ul li ul li {
+            padding: 4%;
+            background-color: grey;
+            margin-left: -11%;
+            visibility: hidden;
+        }
+        </style>
+    </head>
+
+    <body>
+        <div class="navBarCon">
+            <div class="iconCon">
+                <div class="imgCon">
+                    <img src="CssImages/icons8-doctors-bag-100.png" alt="">
+                </div>
+                <div class="restCon">
+                    <p class="navHed">Hospital Management</p>
+                </div>
+            </div>
+            <div class="butCon">
+                
+             <a href="AdminWard.jsp" class="naBtn">Ward</a>
+            <a href="AdminNurse.jsp" class="naBtn">Nurse</a>
+            <a href="AdminDoctor.jsp" class="naBtn">Doctor</a>
+            <a href="Patient.jsp" class="naBtn">Patient</a>
+            <a href="AddMedecine.html" class="naBtn">Add Medicine</a>
+            <a href="AddStaff.jsp" class="naBtn">Account</a>
+            <a href="AddWard.html" class="naBtn">Add Ward</a>
+            <button class="loBtn">logout</button>
+   
+            </div>
+        </div>
+        <div style="clear: both;"></div>  
+        <form action="Servelet_AddWard" class="form" onSubmit="" name="form">
+            <h3 class="lgHed">Add New Ward</h3>
+            <hr><br>
+            <div class="div">
+                <p class="label">Ward Name</p>
+                <input type="text" placeholder="ex :- 1,5,ICU" name="wid"><br>
+                <p class="label">No of Beds</p>
+                <input type="text" placeholder="ex :- 15" name="nob"><br>
+
+                <br><br>
+                <input type="submit" class="btnSub" value="Submit">
+                <br><br><br>
+            </div>
+        </form>
+        <script src="jquery-3.3.1.js"></script>
+    <script>
+        $(document).ready(function(){
+           alert("hi"); 
+        });
+    </script>
+    </body></html>

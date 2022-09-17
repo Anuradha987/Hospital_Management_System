@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        input {
+            font-size: 0.9rem;
+            padding: 1.2%;
+            width: 70%;
+            margin-left: 8%;
+            margin-top: 1.2%;
+        }
+
+        .btnSub {
+            border: none;
+            padding: 2.3%;
+            width: 30%;
+            background-color: blue;
+            color: white;
+            border-radius: 3px
+        }
+
+        .label {
+            margin: 0;
+            font-size: 0.8rem;
+            margin-left: 8%;
+            font-family: verdana;
+            margin-top: 3%;
+        }
+
+   
+             .lgHed {
+                font-size: 2rem;
+                margin: 0;
+                text-align: center;
+                margin-top: 5%
+            }
+            hr {
+                border-color: lightgrey
+            }
+
+            .form {
+                 border: 4px solid lightgrey;
+                width: 35%;
+                margin-left: 35%;
+                margin-top: 8%;
+                
+            }
+        .div {
+            /* border: 1px solid;*/
+            height: 68vh;
+            /*  overflow-y: scroll;*/
+    </style>
+</head>
+
+<body>
+
+    <form action="Servelet_AddMedecine" class="form" method="post">
+       <br><br>
+        <h3 class="lgHed">Add New Medicine!</h3>
+ <hr><br>
+        <div class="div">
+            <p class="label">Medicine ID</p>
+            <input type="text" placeholder="" name="mid"><br>
+            <p class="label">Name</p>
+            <input type="text" placeholder="" name="mn"><br>
+            <p class="label">Quantity</p>
+            <input type="text" placeholder="" name="qn"><br>
+            <p class="label">Unit oF Measure</p>
+            <input type="text" placeholder="" name="uom"><br>
+            <p class="label">Each Price</p>
+            <input type="text" placeholder="" name="pri"><br>
+            <br><br>
+            <input type="submit" class="btnSub" value="Submit">
+            <br><br><br>
+        </div>
+    </form>
+
+</body></html>

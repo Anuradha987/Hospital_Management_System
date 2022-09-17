@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .main {
+            /* border: 1px solid;*/
+            height: 100vh;
+        }
+
+        .spam {
+            font-size: 2rem
+        }
+
+        .spm1 {
+            text-align: center;
+            color: dimgrey
+        }
+
+        .h {
+            font-size: 4rem;
+            line-height: 0.9;
+            width: 100%;
+            margin-left: 15%;
+
+            transition: 0.1s;
+            visibility: hidden;
+            animation-name: animeHed;
+            animation-delay: 0.3s;
+            animation-duration: 0.7s;
+            animation-fill-mode: forwards;
+
+        }
+        p{
+              size: 55px;
+        }
+        .p {
+            width: 50%;
+            font-family: century gothic;
+            size: 55px;
+            margin-left: 15%;
+           visibility: hidden;
+
+            animation-name: animePara;
+            animation-duration: 0.8s;
+            animation-delay: 0.8s;
+            animation-fill-mode: forwards;
+        }
+
+        .sep {
+            /* border: 1px solid;*/
+            float: left;
+        }
+
+        .left {
+
+            width: 60%
+        }
+
+        .right {
+            width: 35%;
+        }
+
+        input {
+            font-size: 1rem;
+            padding: 1.2%;
+            width: 70%;
+            margin-left: 8%;
+            margin-top: 1.2%;
+        }
+
+        .label {
+            margin: 0;
+            font-size: 1.1rem;
+            margin-left: 8%;
+        }
+
+        .lgHed {
+            font-size: 2rem;
+            margin: 0;
+            text-align: center;
+            margin-bottom: 5%
+        }
+
+        hr {
+            border-color: lightgrey
+        }
+
+        .btnSub {
+            border: none;
+            padding: 2.3%;
+            width: 30%;
+            background-color: blue;
+            color: white;
+            border-radius: 3px
+        }
+
+        @keyframes animeHed {
+            0% {
+                visibility: visible;
+                margin-top: 0%;
+            }
+
+            100% {
+                visibility: visible;
+                margin-top: 1.5%;
+            }
+        }
+
+        @keyframes animePara {
+            0% {
+                visibility: visible;
+                margin-top: 0%;
+            }
+
+            100% {
+                visibility: visible;
+                margin-top: 1%;
+            }
+        }
+
+        .container {
+            border: 1px solid white;
+        }
+
+        /*  navigation .............*/
+        .navCon {
+            border: 1px solid;
+            height: 10vh;
+            background-color: black;
+        }
+
+        .navBtnCon {
+            /*border: 1px solid white;*/
+            width: 44%;
+            margin-left: 55%;
+        }
+        .nBtn{
+            color: white;
+            font-family: century gothic;
+            font-size: 0.9rem;
+            margin-left: 5%;
+            text-decoration: none;
+        }
+        .lo{
+            /*border: 1px solid red;*/
+            padding: 1%;
+            padding-left: 4%;
+            padding-right: 4%;
+            margin-left: 25%;
+            background-color: crimson;
+            border-radius: 3px
+         
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="main">
+        <br><br><br><br>
+        <div class="sep left">
+            <div class="container">
+                <br><br>
+                <h1 class="h">
+                    <spam class="spam">Welcome to </spam> <br> Hospital Management <spam class="spm1">
+                      <br>  System
+                    </spam>
+                </h1>
+            </div>
+            <div class="container">
+                <p class="p" style="font-size:20px">"We are here to provide best services for your hospital and your patients with our highly, flexible, standard, and secure products."</p>
+            </div>
+
+        </div>
+        <div class="sep right">
+            <br><br><br><br>
+            <form action="Servelet_Login" method="post">
+                <h3 class="lgHed">Login</h3>
+                <hr><br><br>
+                <p class="label">Username</p>
+                <input type="text" placeholder="Username" name="un"><br><br>
+                <p class="label">Password</p>
+                <input type="password" placeholder="Password" name = "pw">
+                <br><br>
+                <input type="submit" class="btnSub" value="Login" id="subB">
+            </form>
+        </div>
+        
+    </div>
+   <script src="jquery-3.3.1.js"></script>
+        <script>
+            $(document).ready(function () {
+                //alert("HI");
+                var cl = $("#subB").click(function () {
+                    var retVal;
+                    if ($("#ac").val().length == 0) {
+                        retVal = 1;
+                        alert("Cannot be empty !");
+                        return false;
+                    }
+                  
+                   // alert(retVal)
+                });
+            });
+        </script>
+</body></html>
+
